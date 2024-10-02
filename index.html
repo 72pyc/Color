@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Формы</title>
+    <style>
+        .text {
+            width: 100%;
+            background-color: bisque;
+            border-radius: 10px;
+        }
+
+        .sas {
+            width: 100%;
+        }
+
+        .teg {
+            background-color: rgb(217, 219, 247);
+        }
+
+        .red {
+            background-color: rgb(156, 116, 116);
+        }
+
+        body {
+            background-color: rgba(0, 0, 0, 0.233);
+        }
+
+        form {
+            width: 50%;
+            margin: 0 auto;
+            padding: 50px;
+            border-radius: 10px;
+            color: rgb(0, 0, 0);
+        }
+
+        fieldset {
+            bor
+        }
+    </style>
+</head>
+
+<body>
+    <form action="" method="post">
+        <fieldset class="text">
+            <legend>Регистрация</legend>
+            Логин <br><input type="text" placeholder="Введите логин" value="" name="login"> <br> <br>
+            Пароль <br><input type="password" placeholder="Введите парорль" name="password" minlength="10"
+                maxlength="20"><br> <br>
+            Почта <br><input type="email" placeholder="Введите почту" name="mail">
+        </fieldset>
+        <br>
+        <input type="date">
+        <br>
+        <br>
+        <fieldset class="text">
+            <legend>Интересы</legend>
+            <input type="checkbox" name="interes" value="music" id="music"> <label for="music"> Музыка</label> <br>
+            <input type="checkbox" name="interes" value="sport" id="sport"> <label for="sport"> Спорт</label> <br>
+            <input type="checkbox" name="interes" value="programm" id="programm">
+            <label for="programm"> Программирование</label> <br>
+            <label> <input type="checkbox" name="interes" value="game"> Игры</label>
+        </fieldset>
+        <fieldset class="text">
+            <legend>Доставка</legend>
+            <label><input type="radio" name="odin"> Самовывоз</label> <br>
+            <label><input type="radio" name="odin"> Курьером</label> <br>
+            <label><input type="radio" name="odin" checked> Пункт выдачи</label>
+        </fieldset>
+        <h2>Выбор города</h2>
+        <select class="sas" multiple name="" id="">
+            <option selected disabled>Укажите город</option>
+            <optgroup label="Сибирь">
+                <option value="Тюмень">Тюмень</option>
+                <option value="Сургут">Сургут</option>
+            </optgroup>
+            <optgroup label="Столицы">
+                <option value="Москва">Москва</option>
+                <option value="Питер">Другое</option>
+            </optgroup>
+        </select>
+        <br>
+        <br>
+        <textarea name="comment" placeholder="Оставьте ваш комментарий" cols="50" rows="10"></textarea>
+        <br>
+        <input type="submit" class="teg">
+        <br>
+        <br>
+        <button type="reset" class="red">Очистить форму</button>
+    </form>
+</body>
+
+</html>
